@@ -2,8 +2,8 @@ const express = require('express');
 
 const server = express();
 
-const welcomeRouter = require('./welcome/welcome-router');
-const recipeRouter = require('./recipe-book/recipe-router');
+const welcomeRouter = require('./api/welcome/welcome-router');
+const recipeRouter = require('./api/recipe-book/recipe-router');
 
 server.use(express.json());
 
