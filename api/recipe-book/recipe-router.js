@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Recipes = require('./recipe-model');
 
-// Returns All Cars in the database
+// Returns All recipes in the database
 router.get('/', async (req, res, next) => {
 	try {
 		const recipes  = await Recipes.getRecipes();
